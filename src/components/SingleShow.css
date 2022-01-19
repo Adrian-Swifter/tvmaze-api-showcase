@@ -1,0 +1,51 @@
+.SingleShow {
+  display: flex;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  padding: 0.4rem;
+  margin: 1rem;
+}
+
+.SingleShow:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.ss-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+
+.ss-name {
+  font-size: 2rem;
+}
+
+.ss-summary {
+  font-size: 1.2rem;
+  font-family: "Archivo Narrow", sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+}
+
+footer i {
+  margin-right: 3px;
+}
+
+footer p {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .SingleShow {
+    flex-direction: column;
+  }
+
+  .ss-summary {
+    padding-bottom: 1rem;
+  }
+}
