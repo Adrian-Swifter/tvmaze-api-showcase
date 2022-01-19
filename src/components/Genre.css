@@ -9,3 +9,9 @@
   background-color: #30c5ff;
   padding: 1px;
 }
+
+@media screen and (max-width: 768px) {
+  .genres {
+    justify-content: center;
+  }
+}
