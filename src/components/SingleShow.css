@@ -32,10 +32,6 @@ footer {
   font-size: 1.5rem;
 }
 
-footer i {
-  margin-right: 3px;
-}
-
 footer p {
   display: flex;
 }
