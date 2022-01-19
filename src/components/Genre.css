@@ -1,0 +1,11 @@
+.genres {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.genre {
+  font-size: 0.7rem;
+  margin-right: 5px;
+  background-color: #30c5ff;
+  padding: 1px;
+}

@@ -1,6 +1,8 @@
 import React from "react";
 import "./SingleShow.css";
 import Icon from "./Icon";
+import Genre from "./Genre";
+import "./Genre.css";
 
 function SingleShow({ tvShowData, ...props }) {
   console.log(tvShowData);
@@ -24,10 +26,14 @@ function SingleShow({ tvShowData, ...props }) {
                 dangerouslySetInnerHTML={{ __html: tvShowData.summary }}
               />
             </header>
-
+            <main className="genres">
+              {tvShowData.genres.map((genre) => (
+                <Genre genre={genre} />
+              ))}
+            </main>
             <footer>
               <p className="ss-network">
-                <Icon color="#BF0A30" icon={props.icon1} />
+                <Icon color="#f03a47" icon={props.icon1} />
                 <span>{tvShowData.network.name}</span>
               </p>
               <p className="ss-rating">
