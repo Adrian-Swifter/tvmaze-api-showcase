@@ -4,6 +4,10 @@
   font-family: "Fjalla One", sans-serif;
 }
 
+h1 {
+  padding-left: 1rem;
+}
+
 h3,
 p {
   margin: 0;

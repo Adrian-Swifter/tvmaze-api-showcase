@@ -5,13 +5,12 @@ import Genre from "./Genre";
 import "./Genre.css";
 
 function SingleShow({ tvShowData, ...props }) {
-  console.log(tvShowData);
   return (
     <div className="SingleShow">
       {tvShowData &&
       Object.keys(tvShowData).length === 0 &&
       Object.getPrototypeOf(tvShowData) === Object.prototype ? (
-        <h1>loading</h1>
+        <h1>loading...</h1>
       ) : (
         <>
           <div className="ss-image">
@@ -27,8 +26,8 @@ function SingleShow({ tvShowData, ...props }) {
               />
             </header>
             <main className="genres">
-              {tvShowData.genres.map((genre) => (
-                <Genre genre={genre} />
+              {tvShowData.genres.map((genre, index) => (
+                <Genre key={index} genre={genre} />
               ))}
             </main>
             <footer>
